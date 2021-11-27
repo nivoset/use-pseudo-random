@@ -1,6 +1,6 @@
 {
   "name": "use-pseudo-random",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "a library for using a pseudo random number generator in react hooks",
   "main": "./lib/cjs/index.js",
   "module": "./lib/esm/index.js",
