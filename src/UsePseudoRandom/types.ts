@@ -1,15 +1,18 @@
-export interface UsePseudoRandomOptions {
-  seed?: number | string;
+export interface PseudoRandomOptions {
   wholeNumber?: boolean;
   range?: {
     min: number;
     max: number;
-  };
+  }
+}
+
+export interface UsePseudoRandomOptions extends PseudoRandomOptions {
+  seed?: number | string;
 }
 
 
 export interface NextRandom {
-  (): void;
+  (options?: PseudoRandomOptions): number;
 }
 
 export interface UsePseudoRandom {
